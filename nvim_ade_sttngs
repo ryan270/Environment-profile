@@ -1,1 +1,56 @@
-/Users/ade/.config/nvim/init.vim
+"ADE NEOVIM"
+
+"Basic Settings
+syntax on
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set noerrorbells
+set smartindent
+set nu rnu
+set nowrap
+set smartcase
+set noswapfile
+set encoding=utf-8
+set nobackup
+set undodir=~/.config/nvim/undodir
+set undofile
+set incsearch
+set splitbelow
+set splitright
+set textwidth=80
+
+
+"Remaps"
+"Use Command to navigate panes now"
+inoremap ;; <Esc>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-l> <C-w>l
+nnoremap <C-k> <C-w>k
+nnoremap tp :sp term://python<CR>
+tnoremap ;; <C-\><C-n>
+let maplocalleader = " "
+
+"Plugins"
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
+Plug 'jalvesaq/vimcmdline'
+Plug 'jalvesaq/colorout'
+Plug 'morhetz/gruvbox'
+Plug 'mbbill/undotree'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+
+call plug#end()
+
+colorscheme gruvbox
+set background=dark
+
+"Plugin Settings"
+
+"nvim-r settings"
+let R_assign = 0
+let R_rconsole_width = 0
+let R_rconsole_height = 12
