@@ -41,6 +41,8 @@ Plug 'jalvesaq/colorout'
 Plug 'morhetz/gruvbox'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
@@ -54,3 +56,9 @@ set background=dark
 let R_assign = 0
 let R_rconsole_width = 0
 let R_rconsole_height = 12
+
+"dadbod-ui settings"
+nmap <localleader>db <Plug>(DBUI_ExecuteQuery)
+xmap <localleader>db <Plug>(DBUI_ExecuteQuery)
+let g:db_ui_auto_execute_table_helpers = 1
+let g:db_ui_winwidth = 35
