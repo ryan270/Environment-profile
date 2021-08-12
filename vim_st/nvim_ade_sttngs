@@ -22,16 +22,6 @@ set splitright
 set textwidth=80
 
 
-"Remaps"
-"Use Command to navigate panes now"
-inoremap ;; <Esc>
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-l> <C-w>l
-nnoremap <C-k> <C-w>k
-tnoremap ;; <C-\><C-n>
-let maplocalleader = " "
-
 "Plugins"
 call plug#begin('~/.config/nvim/plugged')
 
@@ -54,4 +44,7 @@ colorscheme gruvbox
 set background=dark
 
 "Plugin Settings"
-source $HOME/.config/nvim/plug_settings.vim
+source $HOME/Documents/Configs/vim_st/plug_settings.vim
+
+"Map Settings
+source $HOME/Documents/Configs/vim_st/maps.vim

@@ -6,20 +6,12 @@ let R_rconsole_width = 0
 let R_rconsole_height = 12
 
 "dadbod-ui settings"
-nmap <localleader>db <Plug>(DBUI_ExecuteQuery)
-xmap <localleader>db <Plug>(DBUI_ExecuteQuery)
 let g:db_ui_auto_execute_table_helpers = 1
 let g:db_ui_nvimwinwidth = 35
 
 "LSP settings"
 set completeopt=menuone,noselect
 
-"Mappings"
-inoremap <silent><expr> <C-Space> compe#complete()
-inoremap <silent><expr> <CR>      compe#confirm('<CR>')
-inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
-inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
 "Installing Language Servers"
 lua << EOF
