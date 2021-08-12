@@ -44,21 +44,14 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'vim-airline/vim-airline'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 
 call plug#end()
 
+"Needs more Color"
 colorscheme gruvbox
 set background=dark
 
 "Plugin Settings"
-
-"nvim-r settings"
-let R_assign = 0
-let R_rconsole_width = 0
-let R_rconsole_height = 12
-
-"dadbod-ui settings"
-nmap <localleader>db <Plug>(DBUI_ExecuteQuery)
-xmap <localleader>db <Plug>(DBUI_ExecuteQuery)
-let g:db_ui_auto_execute_table_helpers = 1
-let g:db_ui_winwidth = 35
+source $HOME/.config/nvim/plug_settings.vim
