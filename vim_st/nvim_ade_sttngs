@@ -46,5 +46,5 @@ set background=dark
 "Plugin Settings"
 source $HOME/Documents/Configs/vim_st/plug_settings.vim
 
-"Map Settings
+"Map Settings"
 source $HOME/Documents/Configs/vim_st/maps.vim

@@ -1,5 +1,5 @@
 "MAPPINGS"
-"General remaps
+"General remaps"
 
 "Use Command to navigate panes now"
 inoremap ;; <Esc>
@@ -8,7 +8,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-l> <C-w>l
 nnoremap <C-k> <C-w>k
 
-"Remap exit to normal mode & leader
+"Remap exit to normal mode & leader"
 tnoremap ;; <C-\><C-n>
 let maplocalleader = " "
 
