@@ -12,6 +12,8 @@ let g:db_ui_nvimwinwidth = 35
 "LSP settings"
 set completeopt=menuone,noselect
 
+"Saga Settings"
+nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
 
 "Installing Language Servers"
 lua << EOF
@@ -24,8 +26,7 @@ require'lspconfig'.sqlls.setup{}
 -- Compe setup
 require'compe'.setup {
   enabled = true;
-  autocomplete = true;
-  debug = false;
+  autocomplete = true; debug = false;
   min_length = 1;
   preselect = 'enable';
   throttle_time = 80;
