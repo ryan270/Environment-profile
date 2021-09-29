@@ -8,7 +8,7 @@ set expandtab
 set noerrorbells
 set smartindent
 set nu rnu
-set nowrap
+set wrap
 set smartcase
 set noswapfile
 set encoding=utf-8
