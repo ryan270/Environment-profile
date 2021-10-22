@@ -8,7 +8,7 @@ set expandtab
 set noerrorbells
 set smartindent
 set nu rnu
-set wrap
+set nowrap
 set smartcase
 set noswapfile
 set encoding=utf-8
@@ -28,12 +28,12 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'jalvesaq/vimcmdline'
 Plug 'jalvesaq/colorout'
-Plug 'morhetz/gruvbox'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'hrsh7th/nvim-compe'
@@ -41,8 +41,7 @@ Plug 'hrsh7th/nvim-compe'
 call plug#end()
 
 "Needs more Color"
-colorscheme gruvbox
-set background=dark
+let g:airline_theme='lessnoise'
 
 "Plugin Settings"
 source $HOME/Documents/Configs/vim_st/plug_settings.vim

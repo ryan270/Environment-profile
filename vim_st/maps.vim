@@ -12,11 +12,17 @@ nnoremap <C-k> <C-w>k
 tnoremap ;; <C-\><C-n>
 let maplocalleader = " "
 
+"UndoTree remap"
+nnoremap <localleader>U :UndotreeToggle<cr>
+
+"vimcmdline remap"
+let cmdline_map_send_paragraph = '<LocalLeader>pp'
+let cmdline_map_send = '<Space>l'
+let cmdline_map_source_fun = '<LocalLeader>aa'
 
 "dadbod-ui remaps"
 nmap <localleader>db <Plug>(DBUI_ExecuteQuery)
 xmap <localleader>db <Plug>(DBUI_ExecuteQuery)
-
 
 "compe remaps"
 inoremap <silent><expr> <C-Space> compe#complete()

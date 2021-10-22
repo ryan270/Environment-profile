@@ -1,9 +1,17 @@
 "Plugin Settings"
 
+"UndoTree Settings"
+let g:undotree_SetFocusWhenToggle = 1
+let g:undotree_DiffAutoOpen = 0
+let g:undotree_DiffpanelHeight = 7
+
 "nvim-r settings"
 let R_assign = 0
 let R_rconsole_width = 0
 let R_rconsole_height = 12
+
+"vimcmdline settings"
+let cmdline_follow_colorscheme = 1
 
 "dadbod-ui settings"
 let g:db_ui_auto_execute_table_helpers = 1
@@ -11,9 +19,6 @@ let g:db_ui_nvimwinwidth = 35
 
 "LSP settings"
 set completeopt=menuone,noselect
-
-"Saga Settings"
-nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
 
 "Installing Language Servers"
 lua << EOF
