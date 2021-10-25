@@ -5,24 +5,30 @@ let g:undotree_SetFocusWhenToggle = 1
 let g:undotree_DiffAutoOpen = 0
 let g:undotree_DiffpanelHeight = 7
 
+"Disable Netrw"
+let loaded_netrwPlugin = 1
+"
+"NerdTree Settings"
+let NERDTreeShowBookmarks = 1
+
 "nvim-r settings"
 let R_assign = 0
 let R_rconsole_width = 0
-let R_rconsole_height = 12
+let R_rconsole_height = 11
 
 "vimcmdline settings"
 let cmdline_follow_colorscheme = 1
 
 "dadbod-ui settings"
 let g:db_ui_auto_execute_table_helpers = 1
-let g:db_ui_nvimwinwidth = 35
+let g:db_ui_nvimwinwidth = 30
 
 "LSP settings"
 set completeopt=menuone,noselect
 
 "Installing Language Servers"
 lua << EOF
-require'lspconfig'.pyright.setup{}
+require'lspconfig'.pylsp.setup{}
 require'lspconfig'.r_language_server.setup{}
 require'lspconfig'.vimls.setup{}
 require'lspconfig'.sqlls.setup{}
