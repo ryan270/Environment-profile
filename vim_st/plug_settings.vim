@@ -7,9 +7,6 @@ let g:undotree_DiffpanelHeight = 7
 
 "Disable Netrw"
 let loaded_netrwPlugin = 1
-"
-"NerdTree Settings"
-let NERDTreeShowBookmarks = 1
 
 "nvim-r settings"
 let R_assign = 0
