@@ -1,4 +1,5 @@
-## Settings for ZSH and Neovim as they are in this moment.
+This repository includes the settings for my preferred development environment should I need
+to use a new machine. This entails configurations for nvim, zsh, and vimium. The
+ethos behind these settings is ease, efficiency, and simplicity.
 
-To Install, clone to home folder of new machine and copy setting to desired
-location.
+Check out my init.vim to see how I like to develop :technologist:
