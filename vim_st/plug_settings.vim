@@ -1,37 +1,37 @@
-"Plugin Settings"
+"PLUGIN SETTINGS
 
-"UndoTree Settings"
+"UndoTree
 let g:undotree_SetFocusWhenToggle = 1
 let g:undotree_DiffAutoOpen = 0
 let g:undotree_DiffpanelHeight = 7
 
 "Disable Netrw"
-let loaded_netrwPlugin = 1
+let g:loaded_netrw = 1
+let g:loaded_netrwPlugin = 1
 
-"nvim-r settings"
+"nvim-r
 let R_assign = 0
 let R_rconsole_width = 0
 let R_rconsole_height = 11
 
-"vimcmdline settings"
+"vimcmdline
 let cmdline_follow_colorscheme = 1
 
-"dadbod-ui settings"
+"dadbod-ui
 let g:db_ui_auto_execute_table_helpers = 1
 let g:db_ui_nvimwinwidth = 30
 
-"LSP settings"
+" {{{ LSP
 set completeopt=menuone,noselect
 
-"Installing Language Servers"
+"Installing Servers
 lua << EOF
 require'lspconfig'.pylsp.setup{}
 require'lspconfig'.r_language_server.setup{}
 require'lspconfig'.vimls.setup{}
 require'lspconfig'.sqlls.setup{}
 
---Auto Completion
--- Compe setup
+--Auto Completion / Compe
 require'compe'.setup {
   enabled = true;
   autocomplete = true; debug = false;
@@ -105,3 +105,4 @@ vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 EOF
+" }}}

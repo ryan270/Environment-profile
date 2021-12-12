@@ -1,6 +1,4 @@
-"ADE NEOVIM"
-
-"Basic Settings
+"ADE NEOVIM
 syntax on
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -9,6 +7,7 @@ set noerrorbells
 set smartindent
 set nu rnu
 set wrap
+set foldmethod=marker
 set smartcase
 set noswapfile
 set encoding=utf-8
@@ -21,7 +20,6 @@ set splitbelow
 set splitright
 set textwidth=80
 
-
 "Plugins"
 call plug#begin('~/.config/nvim/plugged')
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
@@ -30,7 +28,10 @@ Plug 'jalvesaq/colorout'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
 Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern-hijack.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'vim-airline/vim-airline'
@@ -39,12 +40,9 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 call plug#end()
 
-"Needs more Color"
+"Extra Settings
 colorscheme nord
 let g:airline_theme='lessnoise'
 
-"Plugin Settings"
 source $HOME/Documents/Configs/vim_st/plug_settings.vim
-
-"Map Settings"
 source $HOME/Documents/Configs/vim_st/maps.vim
