@@ -21,7 +21,7 @@ let cmdline_follow_colorscheme = 1
 let g:db_ui_auto_execute_table_helpers = 1
 let g:db_ui_nvimwinwidth = 30
 
-" {{{ LSP
+"{{{ LSP
 set completeopt=menuone,noselect
 
 "Installing Servers
@@ -105,4 +105,4 @@ vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 EOF
-" }}}
+"}}}
